@@ -19,8 +19,8 @@ jobs:
           java-version: "adopt@1.${{ matrix.java }}"
       - name: Cache SBT
         uses: coursier/cache-action@v6
-#        with:
-#          extraKey: scala-${{ matrix.scala }}
+        with:
+          extraKey: scala-${{ matrix.scala }}
       - name: check compile
         run: sbt compile
   test:
@@ -40,7 +40,7 @@ jobs:
           java-version: "adopt@1.${{ matrix.java }}"
       - name: Cache SBT
         uses: coursier/cache-action@v6
-#        with:
-#          extraKey: scala-${{ matrix.scala }}
+        with:
+          extraKey: scala-${{ matrix.scala }}
       - name: check compile
         run: sbt test
