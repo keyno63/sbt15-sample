@@ -3,6 +3,7 @@ name := "sbt15-sample"
 version := "0.1"
 
 scalaVersion := "3.0.0"
+//scalaVersion := "2.13.5"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
@@ -12,7 +13,23 @@ libraryDependencies ++= Seq(
   //"org.mockito" %% "mockito-scala" % mockitoScalaVersion % Test
 )
 
-val scalaTestVersion = "3.2.9"
-val mockitoVersion = "3.9.0"
+lazy val scalaTestVersion = "3.2.9"
+lazy val mockitoVersion = "3.9.0"
 // scala3 の mockito-scala はまだなかった（2021/05）
 //val mockitoScalaVersion = "1.16.37"
+
+lazy val main = project
+  .in(file("main"))
+  .settings(
+    name := "main",
+    scalaVersion := "3.0.0",
+    semanticdbEnabled := true,
+    scalacOptions ++= Seq("-explaintypes", "-Wunused"),
+    // 以下の scala3 はなさそう
+    libraryDependencies ++= Seq(
+      "org.typelevel" %% "cats-core"           % "2.6.1",
+      "ch.epfl.scala"  % "scalafix-interfaces" % "0.9.31",
+    )
+  )
+
+run / fork := true
