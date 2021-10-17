@@ -1,8 +1,8 @@
 package jp.co.keyno.sample
 
-import org.mockito.ArgumentMatchers.{any, anyString, eq}
+import org.mockito.ArgumentMatchers.{ any, anyString, eq }
 import org.scalatest.flatspec._
-import org.mockito.Mockito.{doReturn, mock}
+import org.mockito.Mockito.{ doReturn, mock }
 
 class SampleTest extends AnyFlatSpec {
 
