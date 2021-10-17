@@ -21,5 +21,5 @@ sbt test
 
 ## LICENSE
 
-All code in this repository is licensed under the Apache License, Version 2.0.  
+This repository is MIT License.  
 see [License](./LICENSE) file.
