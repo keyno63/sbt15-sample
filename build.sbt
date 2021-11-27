@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
 )
 
 lazy val scalaTestVersion = "3.2.10"
-lazy val mockitoVersion   = "3.9.0"
+lazy val mockitoVersion   = "3.12.4"
 // scala3 の mockito-scala はまだなかった（2021/05）
 //val mockitoScalaVersion = "1.16.37"
 
