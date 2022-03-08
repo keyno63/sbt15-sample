@@ -2,7 +2,7 @@ name := "sbt15-sample"
 
 version := "0.1"
 
-scalaVersion := "3.1.0"
+scalaVersion := "3.1.1"
 //scalaVersion := "2.13.5"
 
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   // "org.mockito" %% "mockito-scala" % mockitoScalaVersion % Test
 )
 
-lazy val scalaTestVersion = "3.2.10"
+lazy val scalaTestVersion = "3.2.11"
 lazy val mockitoVersion   = "4.3.1"
 // scala3 の mockito-scala はまだなかった（2021/05）
 //val mockitoScalaVersion = "1.16.37"
