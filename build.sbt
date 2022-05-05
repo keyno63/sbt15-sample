@@ -21,7 +21,7 @@ lazy val main = project
   .in(file("main"))
   .settings(
     name              := "main",
-    scalaVersion      := "3.0.2",
+    scalaVersion      := "3.1.2",
     semanticdbEnabled := true,
     scalacOptions ++= Seq("-explaintypes", "-Wunused"),
     // 以下の scala3 はなさそう
