@@ -26,7 +26,7 @@ lazy val main = project
     scalacOptions ++= Seq("-explaintypes", "-Wunused"),
     // 以下の scala3 はなさそう
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-core"           % "2.7.0",
+      "org.typelevel" %% "cats-core"           % "2.8.0",
       "ch.epfl.scala"  % "scalafix-interfaces" % "0.10.0"
     )
   )
