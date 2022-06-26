@@ -2,7 +2,7 @@ name := "sbt15-sample"
 
 version := "0.1"
 
-scalaVersion := "3.1.2"
+scalaVersion := "3.1.3"
 //scalaVersion := "2.13.5"
 
 libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ lazy val main = project
   .in(file("main"))
   .settings(
     name              := "main",
-    scalaVersion      := "3.1.2",
+    scalaVersion      := "3.1.3",
     semanticdbEnabled := true,
     scalacOptions ++= Seq("-explaintypes", "-Wunused"),
     // 以下の scala3 はなさそう
