@@ -27,7 +27,7 @@ lazy val main = project
     // 以下の scala3 はなさそう
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-core"           % "2.8.0",
-      "ch.epfl.scala"  % "scalafix-interfaces" % "0.10.0"
+      "ch.epfl.scala"  % "scalafix-interfaces" % "0.10.1"
     )
   )
 
